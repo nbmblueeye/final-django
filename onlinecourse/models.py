@@ -94,7 +94,6 @@ class Enrollment(models.Model):
 # One submission could have multiple choices
 # One choice could belong to multiple submissions
 
-
 class Question(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     content = models.CharField(max_length=200)
